@@ -37,7 +37,7 @@ function search(){
 
       //grabbing info from api and posting it to the current weather box
       var weatherDiv = $("<div>");
-      var cityName = $(`<h3>${response.name} - ${currentDate}</h3>`)
+      var cityName = $(`<h3>${response.name} - ${currentDate}</h3>`);
       var temp = $(`<p>Temperature: ${Math.floor(F)} °F</p>`);
       var humidity = $(`<p>Humidity: ${response.main.humidity}%</p>`);
       var windSpeed = $(`<p>Wind Speed: ${response.wind.speed} MPH</p>`);
